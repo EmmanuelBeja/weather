@@ -1,15 +1,24 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
 import App from './App';
+import Loading from './components/Loading';
+import ErrorBoundary from './pages/ErrorBoundary';
+import { Toaster } from 'react-hot-toast';
 import reportWebVitals from './reportWebVitals';
+
+import './index.css';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <App />
+    <Suspense fallback={<Loading />}>
+      <ErrorBoundary>
+        <App />
+        <Toaster />
+      </ErrorBoundary>
+    </Suspense>
   </React.StrictMode>
 );
 
