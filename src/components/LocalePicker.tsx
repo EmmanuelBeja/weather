@@ -1,4 +1,7 @@
 import { useContext } from 'react';
+
+import { FormattedMessage } from 'react-intl';
+
 import { LocaleContextType } from '../@types/locale';
 import { LocaleContext } from '../utils/store/localeContext';
 
@@ -9,7 +12,7 @@ const LocalePicker: React.FC = () => {
   return (
     <div className="flex items-center gap-2">
       <label htmlFor="locale" className="text-[white]">
-        Select Language
+        <FormattedMessage id="app.language" />
       </label>
       <select
         id="locale"

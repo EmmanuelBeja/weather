@@ -1,4 +1,6 @@
 {
   "app.greeting": "Hello! How are you!",
-  "app.noweather": "Could not find Nairobi's Weather."
+  "app.noweather": "Could not find Nairobi's Weather.",
+  "app.language": "Select Language.",
+  "app.loading": "Loading..."
 }

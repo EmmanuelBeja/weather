@@ -1,4 +1,6 @@
 {
   "app.greeting": "Niaje, Habari yako!",
-  "app.noweather": "Hatuna maelezo ya hali ya anga Nairobi"
+  "app.noweather": "Hatuna maelezo ya hali ya anga Nairobi",
+  "app.language": "Chagua Lugha.",
+  "app.loading": "Subiri..."
 }
